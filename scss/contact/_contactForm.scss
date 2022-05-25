@@ -1,0 +1,65 @@
+.wrapperContactForm {
+  background-color: $color20;
+  padding-bottom: 40px;
+}
+
+.formContactWithUs {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  input,
+  textarea {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    background-color: $color1;
+    border: none;
+    padding: 15px;
+    box-shadow: 0 0 5px $color5;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.containerInputConact {
+  display: flex;
+  gap: 8px;
+  .wrapperEmailContact{
+    flex: 1;
+  }
+  .wrapperPhoneContact{
+    flex : 1;
+  }
+}
+
+.wrapperButtonContactWithUs {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button {
+    padding: 15px 30px;
+  }
+}
+
+// Custom responsive
+/* Mobie: width < 740px */
+@media only screen and (max-width: 739px) {
+  .wrapperContactForm {
+    padding-bottom: 20px;
+  }
+  .formContactWithUs {
+    width: 100%;
+  }
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .formContactWithUs {
+    width: 80%;
+  }
+}

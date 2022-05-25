@@ -1,0 +1,43 @@
+// variables
+@import "../abstracts/variables";
+// end variables
+
+// mixins
+@import "../abstracts/mixins";
+// end mixins
+
+@import '../vendors/slick';
+
+@import '../vendors/animate';
+
+// main slider 
+@import "../home/mainSlider";
+// end main slider 
+
+// about us 
+@import "../home/aboutUs";
+// end about us 
+
+// project 
+@import "../home/projects";
+// end project 
+
+// statistics 
+@import "../home/statistics";
+// end statistics
+
+// why choose us
+@import "../home/whyChooseUs";
+// end why choose us 
+
+// latest news 
+@import '../home/latestNews';
+// end latest news
+
+// data area 
+@import '../home/dataArea';
+// end data area 
+
+// logo partner 
+@import '../home/logoPartner';
+// end logo partner

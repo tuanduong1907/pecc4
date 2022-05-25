@@ -1,0 +1,17 @@
+// variables
+@import "../abstracts/variables";
+// end variables
+
+// mixins
+@import "../abstracts/mixins";
+// end mixins
+
+@import '../vendors/slick';
+
+// project detail
+@import "../projectDetail/projectDetail";
+// end project detail 
+
+// slide project detail 
+@import "../projectDetail/slideProject";
+// end slide project detail 

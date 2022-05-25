@@ -1,0 +1,87 @@
+.wrapperMainVideo {
+  background-position: center top;
+  background-size: cover;
+  margin-top: 50px;
+}
+.containerMainVideo {
+  padding: 100px 0;
+  .contentMainVideo {
+    margin: 0;
+  }
+}
+
+.wrapperButtonPlayMainVideo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapperContentMainVideo {
+  background-color: $color1;
+  margin: 0 auto;
+}
+
+.wrapperContentMainVideo {
+  padding: 77px 90px;
+  .titleContentMainVideo {
+    display: block;
+    margin-bottom: 20px;
+    padding-left: 37px;
+    position: relative;
+    line-height: 1.2;
+    font-size: 32px;
+    span {
+      color: $color3;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background-color: $color3;
+    }
+  }
+
+  .textContentMainVideo {
+    color: $color9;
+    font-family: $font1;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .wrapperContentMainVideo {
+    padding: 65px;
+    .titleContentMainVideo {
+      font-size: 26px;
+      line-height: 34px;
+      padding-left: 30px;
+    }
+    .textContentMainVideo {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .wrapperContentMainVideo {
+    padding: 50px 45px 45px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .contentMainVideo {
+    flex-direction: column-reverse;
+  }
+  .buttonPlayMainVideo {
+    margin: 70px 0 40px;
+  }
+
+  .wrapperContentMainVideo {
+    width: 80%;
+  }
+}

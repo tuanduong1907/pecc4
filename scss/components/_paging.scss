@@ -1,0 +1,51 @@
+.wrapperPaging{
+    margin-bottom: 40px;
+}
+
+.listPaging{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .itemPaging{
+        margin-right: 8px;
+    }
+}
+
+.linkPaging{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    font-size: 14px;
+    line-height: 20px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: transparent;
+    color: $color6;
+    border: 1px solid $color5;
+    transition: all .5s;
+    svg{
+        width: 10px;
+        height: 15px;
+        color: $color6;
+        &.paddingIcon{
+            padding: 2px;
+        }
+    }
+    &:hover,
+    &.active{
+        color: $color1;
+        background-color: $color17;
+        border-color: $color17;
+        svg{
+            color: $color1;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .wrapperPaging {
+        margin-bottom: 30px;
+    }
+}
+

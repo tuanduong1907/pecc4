@@ -1,0 +1,274 @@
+.wrapperProject {
+  padding-top: 40px;
+  .itemProject {
+    padding-bottom: 80px;
+  }
+}
+
+.contentProject {
+  position: relative;
+  margin: 0;
+  .wrapperImageProject {
+    padding: 0;
+  }
+  .wrapperDetailProject {
+    padding: 0;
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+  }
+  &:hover {
+    .containerImageProject {
+      .imageProject {
+        transform: scale(1.2) rotate(3deg);
+      }
+      .wrapperHoverEffectProject {
+        .elementEffectProject {
+          opacity: 0.3;
+          &:nth-child(1) {
+            top: 0;
+            left: 50%;
+          }
+          &:nth-child(2) {
+            top: 50%;
+            left: 50%;
+          }
+          &:nth-child(3) {
+            top: 50%;
+            left: 0;
+          }
+          &:nth-child(4) {
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+  &.reverse {
+    flex-direction: row-reverse;
+    .wrapperDetailProject {
+      left: 0;
+      .containerDetailProject {
+        .wrapperButtonDetailProject {
+          left: 60px;
+        }
+      }
+    }
+  }
+}
+
+.containerImageProject {
+  position: relative;
+  width: 100%;
+  padding-top: 50%;
+  overflow: hidden;
+  .imageProject {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color2;
+    visibility: visible;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.3s;
+  }
+}
+
+.wrapperDetailProject {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.containerDetailProject {
+  width: 100%;
+  height: 100%;
+  padding: 50px 60px 60px;
+  box-shadow: 0 0 20px $color16;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color8;
+    opacity: 0.9;
+    z-index: -1;
+  }
+}
+
+.wrapperTitleDetailProject {
+  position: relative;
+  h4 {
+    color: $color1;
+    font-size: 32px;
+    line-height: 38px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    padding-top: 1px;
+    background-color: #bfc6cc;
+  }
+}
+
+.wrapperTextDetailProject {
+  p {
+    color: $color5;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+    margin-bottom: 0;
+    word-spacing: 1px;
+    @include splitText(6, 132px);
+  }
+}
+
+.wrapperButtonDetailProject {
+  position: absolute;
+  bottom: 0;
+  right: 60px;
+  transform: translateY(15px);
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: $color1;
+    background-color: $color17;
+    padding: 18px 30px;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(0.95);
+      background-color: $color21;
+    }
+  }
+}
+
+.wrapperHoverEffectProject {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  .elementEffectProject {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: $color2;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.5s;
+    &:nth-child(1) {
+      top: 0;
+      left: 0;
+    }
+    &:nth-child(2) {
+      top: 0;
+      left: 50%;
+    }
+    &:nth-child(3) {
+      top: 50%;
+      left: 50%;
+    }
+    &:nth-child(4) {
+      top: 50%;
+      left: 0;
+    }
+  }
+}
+
+// Custom responsive
+/* Mobie: width < 740px */
+@media only screen and (max-width: 739px) {
+  .containerProject-custom {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .wrapperProject {
+    padding-top: 30px;
+    .itemProject {
+      padding-bottom: 0;
+    }
+  }
+  .contentProject {
+    position: static;
+    .wrapperDetailProject {
+      bottom: auto;
+    }
+  }
+  .wrapperTitleDetailProject {
+    h4 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  .contentProject {
+    .wrapperButtonDetailProject,
+    .wrapperDetailProject {
+      position: static;
+    }
+  }
+}
+
+/* Mobie: width < 740px */
+@media only screen and (max-width: 739px) {
+  .containerDetailProject {
+    padding: 12px 20px 32px;
+  }
+
+  .wrapperTitleDetailProject {
+    h4 {
+      padding-bottom: 0;
+      margin-bottom: 8px;
+      font-size: 18px;
+      line-height: 28px;
+      display: inline-block;
+      border-bottom: 1px solid #fff;
+    }
+    &:before {
+      width: 0;
+    }
+  }
+  .wrapperButtonDetailProject {
+    a {
+      padding: 12px 20px;
+    }
+  }
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .containerProject-custom {
+    padding-inline: 0;
+    max-width: 740px;
+  }
+}
+
+/* PC Low */
+@media (min-width: 1024px) and (max-width: 1239px) { 
+  .containerProject-custom {
+    max-width: 1018px;
+  }
+}

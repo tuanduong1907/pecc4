@@ -1,0 +1,24 @@
+.wrapPopupPlayerVideo{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color15;
+    z-index: 9999;
+}
+
+.containerPopupPlayerVideo{
+    display: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .popupPlayerVideo{
+        width: 50%;
+        height: 60%;
+        border: none;
+    }
+}

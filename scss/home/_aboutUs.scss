@@ -1,0 +1,202 @@
+// layout 2
+.wrapperAboutUs {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to right,
+      transparent,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0.9)
+    );
+  }
+  .containerAboutUs {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.wrapperTitleSections {
+  &.aboutUs {
+    margin-bottom: 20px;
+    position: relative;
+    h4 {
+      font-size: 40px;
+      line-height: 58px;
+      font-weight: 500;
+      text-transform: uppercase;
+      position: relative;
+      margin-bottom: 0;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: calc(100% + 30px);
+      transform: translateY(-50%);
+      width: 230px;
+      height: 2px;
+      background-color: $color8;
+    }
+  }
+}
+
+.contentAboutUs {
+  justify-content: end;
+}
+.elementAboutUs {
+  padding-left: 230px;
+  padding-right: 30px;
+}
+
+.wrapperTextAboutUs {
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 9;
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: $color2;
+    // @include splitText(4, 96px);
+    text-align: justify;
+  }
+}
+
+.wrapperListImageAboutUs {
+  position: relative;
+  width: 100%;
+  padding-top: 66.66%;
+  z-index: 1;
+}
+
+.containerImageAboutUs {
+  position: absolute;
+  &:nth-child(1) {
+    width: 50%;
+    padding-top: 33.33%;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+  &:nth-child(2) {
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    padding-top: 48%;
+    z-index: 1;
+  }
+  .imageAbout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.wrapperBackgroundImageAboutUs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 115%;
+  height: 115%;
+  transform: translate(-50%, -50%);
+
+  .backgroundImageAboutUs {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: rotation2 15s infinite linear;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .elementAboutUs {
+    padding-left: 30px;
+  }
+  .wrapperTitleSections {
+    &.aboutUs {
+      &:after {
+        width: 100px;
+      }
+    }
+  }
+
+  .wrapperListImageAboutUs {
+    overflow: hidden;
+  }
+}
+@media (max-width: 767.98px) {
+  .elementAboutUs {
+    padding-right: 30px;
+  }
+  .wrapperTitleSections {
+    &.aboutUs {
+      &:after {
+        width: 0;
+      }
+    }
+  }
+}
+@media (max-width: 575.98px) {
+  .contentAboutUs {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .wrapperTitleSections {
+    &.aboutUs {
+      h4 {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 500;
+      }
+    }
+  }
+  .wrapperTextAboutUs {
+    p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+
+// Custom responsive
+/* Mobie: width < 740px */
+@media only screen and (max-width: 739px) {
+  .wrapperAboutUs {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .wrapperTitleSections {
+    &.aboutUs {
+      margin-bottom: 15px;
+    }
+  }
+  .elementAboutUs {
+    padding-inline: 0;
+  }
+  .textAboutUs {
+    margin-bottom: 15px;
+  }
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .elementAboutUs{
+    padding-inline: 15px !important;
+  }
+
+}
+

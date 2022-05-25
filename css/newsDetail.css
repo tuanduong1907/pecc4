@@ -1,0 +1,787 @@
+.wrapperProjectDetail {
+  padding-top: 40px;
+}
+
+.wrapperMainProjectPanel {
+  position: relative;
+  height: 100%;
+  padding-bottom: 40px;
+}
+.wrapperMainProjectPanel .containerMainProjectPanel {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90px;
+}
+
+.itemMainProjectPanel {
+  transform-style: preserve-3d;
+  margin-bottom: 5px;
+}
+
+.linkMainProjectPanel {
+  position: relative;
+  display: block;
+  padding: 20px 30px;
+  background-color: #092271;
+  text-decoration: none;
+  z-index: 1;
+  transition: all 0.5s;
+}
+.linkMainProjectPanel .textLinkMainProjectPanel {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+.linkMainProjectPanel:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #092271;
+  transition: all 0.5s;
+}
+.linkMainProjectPanel:hover, .linkMainProjectPanel.active {
+  background-color: #eff2f7;
+  box-shadow: 0 5px 30px #525050;
+}
+.linkMainProjectPanel:hover:before, .linkMainProjectPanel.active:before {
+  width: 10px;
+}
+.linkMainProjectPanel:hover .textLinkMainProjectPanel, .linkMainProjectPanel.active .textLinkMainProjectPanel {
+  color: #092271;
+  padding-left: 10px;
+}
+
+.wrapperSubProjectPanel {
+  display: none;
+}
+.wrapperSubProjectPanel.active {
+  display: block;
+}
+
+.listSubProjectPanel {
+  padding-left: 10px;
+}
+
+.linkSubProjectPanel {
+  display: block;
+  position: relative;
+  padding: 15px 30px;
+  background-color: #eff2f7;
+  color: #ffffff !important;
+  text-decoration: none;
+  border-top: 1px solid #ffffff;
+  transition: all 0.5s;
+}
+.linkSubProjectPanel .textLinkSubProjectPanel {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.linkSubProjectPanel svg {
+  width: 0px;
+  height: 0px;
+  color: #000000;
+  transition: all 0.5s;
+}
+.linkSubProjectPanel:hover .textLinkSubProjectPanel, .linkSubProjectPanel.active .textLinkSubProjectPanel {
+  color: #d32c2c;
+  font-weight: 700;
+}
+.linkSubProjectPanel:hover svg, .linkSubProjectPanel.active svg {
+  color: #d32c2c;
+  width: 15px;
+  height: 10px;
+}
+
+.wrapperTitleProjectContent {
+  margin-top: -120px;
+  width: 80%;
+  padding-top: 25%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+.wrapperTitleProjectContent .containerTitleProjectContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 1;
+}
+.wrapperTitleProjectContent .containerTitleProjectContent:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #eff2f7;
+}
+.wrapperTitleProjectContent .containerTitleProjectContent h4 {
+  margin-bottom: 0;
+  font-size: 28px;
+  line-height: 36px;
+  color: #ffffff;
+}
+.wrapperTitleProjectContent:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #092271;
+  opacity: 0.8;
+}
+
+.containerImageProjectContent {
+  position: relative;
+  width: 100%;
+  padding-top: 60%;
+}
+.containerImageProjectContent .imageProjectContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapperTextProjectContent .textProjectContent {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+.wrapperTextProjectContent .titleTextProjectContent {
+  font-size: 24px;
+  line-height: 32px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.wrapperTextProjectContent .titleTextProjectContent:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 0.8px;
+  background-color: #525050;
+}
+
+.listTextProjectContent {
+  justify-content: center;
+  margin-top: 20px;
+}
+.listTextProjectContent .itemTextProjectContent {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.listTextProjectContent .itemTextProjectContent svg {
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+  margin-right: 8px;
+  color: #183186;
+  transform: translateY(-2px);
+}
+
+.wrapperImageProjectText {
+  width: 100%;
+}
+
+.containerImageProjectText {
+  position: relative;
+  width: 100%;
+  padding-top: 80%;
+}
+.containerImageProjectText .imageProjectText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapperProjectDetail-2 {
+  margin-bottom: 60px;
+}
+
+.wrapperTitleProjectDetail-2 .titleTextProjectDetail-2 {
+  font-size: 24px;
+  line-height: 32px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  position: relative;
+  color: #092271;
+}
+.wrapperTitleProjectDetail-2 .titleTextProjectDetail-2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 0.8px;
+  background-color: #525050;
+}
+
+.wrapperTextProjectDetail-2 .textProjectDetail-2 {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 5px;
+  text-align: justify;
+}
+
+.contentImageProjectDetail-2 {
+  position: relative;
+  width: 100%;
+  padding-top: 50%;
+}
+.contentImageProjectDetail-2 .imageProjectDetail-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
+.contentImageProjectDetail-2 div {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+.contentImageProjectDetail-2 .backgroundImageStaticProjectDetail-2 {
+  transform: translateY(15px) scale(1.4);
+  z-index: 1;
+}
+.contentImageProjectDetail-2 .backgroundImageAnimationProjectDetail-2 {
+  z-index: 2;
+  -webkit-animation: rotation 15s infinite linear;
+          animation: rotation 15s infinite linear;
+}
+
+@media (max-width: 1399.98px) {
+  .contentImageProjectDetail-2 {
+    padding-top: 62%;
+  }
+}
+@media (max-width: 1199.98px) {
+  .contentImageProjectDetail-2 {
+    padding-top: 82%;
+  }
+  .contentImageProjectDetail-2 .imageProjectDetail-2 {
+    width: 68%;
+  }
+
+  .wrapperTitleProjectContent .containerTitleProjectContent {
+    width: 90%;
+    text-align: center;
+  }
+}
+.wrapperProjectContentDetail img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile & tablet: width <1024px */
+@media only screen and (max-width: 1023px) {
+  .linkSubProjectPanel {
+    padding: 15px 20px;
+  }
+}
+/* Mobie: width < 740px */
+@media only screen and (max-width: 739px) {
+  .wrapperProjectDetail {
+    padding-top: 30px;
+  }
+
+  .wrapperMainProjectPanel {
+    padding-bottom: 15px;
+  }
+
+  .linkMainProjectPanel {
+    padding: 15px 30px;
+  }
+
+  .wrapperTextProjectContent .textProjectContent {
+    margin-bottom: 0;
+  }
+
+  .rightSideProjectDetail {
+    padding-bottom: 30px;
+  }
+
+  .rightSideProjectDetail--ld {
+    padding-bottom: 0;
+  }
+
+  .backgroundImageAnimationProjectDetail-2 {
+    display: none;
+  }
+
+  .containerImageProjectDetail-2 {
+    overflow: hidden;
+  }
+
+  .listTextProjectContent {
+    margin-top: 20px;
+  }
+  .listTextProjectContent .itemTextProjectContent {
+    margin-bottom: 15px !important;
+  }
+
+  .wrapperTextProjectDetail-2 .textProjectDetail-2 {
+    margin-bottom: 12px;
+  }
+
+  .containerImageProjectContent .imageProjectContent {
+    padding-bottom: 0;
+  }
+
+  .wrapperTitleProjectContent .containerTitleProjectContent h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .wrapperImageProjectContent--ld {
+    margin-bottom: 15px !important;
+  }
+}
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .rightSideProjectDetail {
+    padding-right: 6px;
+  }
+
+  .listSubProjectPanel {
+    padding-left: 0;
+  }
+
+  .contentImageProjectDetail-2 div {
+    width: 50%;
+  }
+
+  .containerProjectDetailCustom {
+    max-width: 756px;
+  }
+
+  .containerProjectDetail--ld {
+    max-width: 759px;
+  }
+}
+/* PC Low */
+@media (min-width: 1024px) and (max-width: 1239px) {
+  .contentImageProjectDetail-2 div {
+    width: 50%;
+  }
+
+  .containerProjectDetail--ld {
+    max-width: 1018px;
+  }
+}
+.wrapperNewsDetail {
+  margin: 40px 0;
+}
+
+.leftNewsDetail {
+  padding-right: 20px;
+}
+
+.wrapperTitleLeftNewsDetail .titleLeftNewsDetail {
+  font-size: 32px;
+  line-height: 36px;
+  color: #092271;
+  margin-bottom: 15px;
+}
+
+.wrapperDateLeftNewsDetail {
+  border-bottom: 1px solid #bbbdc3;
+  margin-bottom: 15px;
+}
+.wrapperDateLeftNewsDetail .dateLeftNewsDetail {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #525050;
+  letter-spacing: 1px;
+}
+.wrapperDateLeftNewsDetail .dateLeftNewsDetail svg {
+  width: 15px;
+  height: 12px;
+  color: #525050;
+  transform: translateY(-2px);
+}
+
+.wrapperAuthorLeftNewsDetail {
+  border-bottom: 1px solid #bbbdc3;
+  margin-bottom: 40px;
+}
+.wrapperAuthorLeftNewsDetail .authorLeftNewsDetail {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: uppercase;
+  text-align: right;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.wrapperTextLeftNewsDetail .textLeftNewsDetail {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 8px;
+  text-align: justify;
+}
+
+.containerImageLeftNewsDetail {
+  position: relative;
+  width: 100%;
+  padding-top: 60%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.containerImageLeftNewsDetail .imageNewsDetail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.descriptionImageLeftNewsDetail {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  font-style: italic;
+  color: #525050;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.wrapperContentNews {
+  width: 100%;
+}
+.wrapperContentNews.topNews {
+  padding: 0 40px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  z-index: 2;
+}
+.wrapperContentNews .titleContentNews {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #000000;
+  transition: all 0.5s;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 66px;
+}
+.wrapperContentNews .titleContentNews:hover {
+  color: #d32c2c;
+}
+.wrapperContentNews .textContentNews {
+  font-size: 14px;
+  line-height: 20px;
+  color: #525050;
+  margin-bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 44px;
+}
+.wrapperContentNews .authorContentNews {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  color: #525050;
+  text-transform: uppercase;
+}
+.wrapperContentNews .authorContentNews .linkAuthorContentNews {
+  text-decoration: none;
+  transition: all 0.5s;
+  color: #000000;
+}
+.wrapperContentNews .authorContentNews .linkAuthorContentNews:hover {
+  color: #d32c2c;
+}
+.wrapperContentNews .buttonArrow {
+  left: 0;
+}
+.wrapperContentNews .buttonArrow:hover {
+  color: #d32c2c;
+}
+.wrapperContentNews .buttonArrow:hover:before {
+  border-right: 2px solid #d32c2c;
+  border-bottom: 2px solid #d32c2c;
+}
+.wrapperContentNews .buttonArrow:hover:after {
+  background-color: #d32c2c;
+}
+
+.wrapperTitleRelatedNews {
+  border-bottom: 1px solid #092271;
+  margin-bottom: 20px;
+}
+.wrapperTitleRelatedNews .titleRelatedNews {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: -1px;
+  display: inline-block;
+  padding: 10px 20px 10px;
+  background-color: #092271;
+  color: #ffffff;
+}
+
+.containerImageElementRelatedNews {
+  position: relative;
+  width: 100%;
+  padding-top: 65%;
+}
+.containerImageElementRelatedNews .imageElementRelatedNews {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapperTitleContentElementRelatedNews .titleContentElementRelatedNews {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+  transition: all 0.5s;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 40px;
+}
+.wrapperTitleContentElementRelatedNews .titleContentElementRelatedNews:hover {
+  color: #d32c2c;
+}
+
+.wrapperDateContentElementRelatedNews .dateContentElementRelatedNews {
+  font-size: 12px;
+  line-height: 18px;
+  color: #525050;
+  margin-bottom: 5px;
+}
+.wrapperDateContentElementRelatedNews .dateContentElementRelatedNews svg {
+  width: 12px;
+  height: 12px;
+  color: #525050;
+  transform: translateY(-2px);
+}
+
+.wrapperTextContentElementRelatedNews .textContentElementRelatedNews {
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 36px;
+}
+
+.elementRightNewsDetail {
+  border: 1px solid #cecece;
+  padding: 28px 30px 0;
+  margin-bottom: 30px;
+}
+
+.wrapperTitleRightNewsDetail {
+  position: relative;
+  width: 100%;
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+.wrapperTitleRightNewsDetail .titleRightNewsDetail {
+  font-size: 16px;
+  line-height: 24px;
+  width: 165px;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 0;
+  margin-bottom: 0;
+  background-color: #ffffff;
+  z-index: 2;
+}
+.wrapperTitleRightNewsDetail .titleRightNewsDetail:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleX(0.9);
+  width: 100%;
+  height: 100%;
+  background-color: #d32c2c;
+  z-index: -1;
+}
+.wrapperTitleRightNewsDetail:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+}
+
+.itemRightNewsDetail:last-child .wrapperContentNews.rightSide.newsDetail {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.containerItemRightNewsDetail:hover .wrapperImageItemRightNewsDetail .imageItemRightNewsDetail {
+  transform: scale(1.1);
+}
+
+.wrapperImageItemRightNewsDetail {
+  position: relative;
+  width: 100%;
+  padding-top: 60%;
+  overflow: hidden;
+}
+.wrapperImageItemRightNewsDetail .imageItemRightNewsDetail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 4s cubic-bezier(0, 0.6, 0.45, 1);
+}
+
+.wrapperContentNews.rightSide.newsDetail {
+  padding: 25px 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #cecece;
+}
+.wrapperContentNews.rightSide.newsDetail .titleContentNews {
+  font-size: 20px;
+  line-height: 28px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-height: 78px;
+}
+
+.wrapperNewsDetail {
+  margin: 20px 0 40px 0;
+}
+.wrapperNewsDetail a {
+  color: #0d6efd;
+}
+
+/* Mobie: width < 740px */
+@media only screen and (max-width: 739px) {
+  .wrapperTitleLeftNewsDetail .titleLeftNewsDetail {
+    margin-bottom: 15px;
+    padding-top: 15px;
+  }
+  .wrapperTitleLeftNewsDetail .dateLeftNewsDetail {
+    margin-bottom: 15px;
+  }
+
+  .wrapperAuthorLeftNewsDetail {
+    margin-bottom: 15px;
+  }
+  .wrapperAuthorLeftNewsDetail .authorLeftNewsDetail {
+    font-size: 12px;
+  }
+
+  .wrapperContentNews.rightSide.newsDetail {
+    padding: 15px 0;
+    margin-bottom: 15px;
+  }
+
+  .wrapperTitleRelatedNews {
+    margin-bottom: 15px;
+  }
+
+  .removeMP-top {
+    margin-top: 0;
+    padding-top: 0 !important;
+  }
+
+  .wrapperNewsDetail {
+    margin: 30px 0;
+  }
+
+  .wrapperNewsDetail-custom {
+    margin-top: 0;
+  }
+
+  .elementRightNewsDetail {
+    margin-bottom: 0;
+  }
+
+  .descriptionImageLeftNewsDetail {
+    margin-bottom: 15px;
+  }
+}
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .containerNewsDetail {
+    max-width: 765px;
+  }
+
+  .containerProjectDetail {
+    max-width: 756px;
+  }
+}
+/* PC Low */
+@media (min-width: 1024px) and (max-width: 1239px) {
+  .containerProjectDetail,
+.containerNewsDetail {
+    max-width: 1018px;
+  }
+}

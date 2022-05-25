@@ -1,0 +1,21 @@
+.wrapMenuCategoryPage {
+    position: relative;
+    z-index: 990;
+    
+    .wrapMenuShareholder {
+        height: auto;
+
+        .btnScroll {
+            float: none;
+            display: inline-block;
+        }
+    }
+
+    .listItem {
+        white-space: nowrap;
+    }
+
+    .containerItem {
+        overflow-x: auto;
+    }
+}

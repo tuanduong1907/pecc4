@@ -1,0 +1,112 @@
+.wrapperTitlePage{
+    background-size: cover;
+    background-position: center 64%;
+    position: relative;
+    height: 350px;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color2;
+        content: '';
+        @include opacity(0.4);
+    }
+}
+
+.contentTitlePage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    
+    .titlePage{
+        font-size: 32px;
+        line-height: 40px;
+        color: $color1;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+        position: relative;
+        padding-bottom: 7px;
+
+        &::after {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 80px;
+            background-color: $color1;
+            height: 3px;
+            content: '';
+            @include translate(-50%, 0);
+        }
+    }
+}
+
+// page hierarchy
+.titlePageHierarchy{
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+.linkTitlePageHierarchy{
+    text-decoration: none;
+    font-weight: 400;
+    cursor: context-menu;
+    .textTitlePageHierarchy{
+        font-size: 14px;
+        line-height: 20px;
+        color: $color1;
+        transition: all .5s;
+        svg{
+            width: 15px;
+            height: 15px;
+            transition: all .5s;
+            @include translate(0, -2px);
+        }
+    }
+}
+
+.hoverTitlePage{
+    cursor: pointer;
+    &:hover{
+        span{
+            color: $color17;
+            svg{
+                color: $color17;
+            }
+        }
+    }    
+}
+
+.titleArrow{
+    position: relative;
+    margin-right: 30px;
+
+    &:before{
+        position: absolute;
+        content: "";
+        height: 6px;
+        width: 6px;
+        background: transparent;
+        top: 15px;
+        border-right: 2px solid $color1;
+        border-bottom: 2px solid $color1;
+        left: calc(100% + 10px);
+        transition: 0.5s ease;
+        @include transform(rotate(-45deg));
+    }
+}
+
+.boldTitle{
+    font-weight: 700;
+}
+
+@media(min-width: 1400px) {
+    .wrapperTitlePage{
+        height: 400px;
+    }
+}

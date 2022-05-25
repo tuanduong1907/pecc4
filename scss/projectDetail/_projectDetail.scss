@@ -1,0 +1,420 @@
+.wrapperProjectDetail {
+  padding-top: 40px;
+}
+
+// project panel
+.wrapperMainProjectPanel {
+  position: relative;
+  height: 100%;
+  padding-bottom: 40px;
+  .containerMainProjectPanel {
+    position: sticky;
+    top: 90px;
+  }
+}
+
+.itemMainProjectPanel {
+  transform-style: preserve-3d;
+  margin-bottom: 5px;
+}
+
+.linkMainProjectPanel {
+  position: relative;
+  display: block;
+  padding: 20px 30px;
+  background-color: $color8;
+  text-decoration: none;
+  z-index: 1;
+  transition: all 0.5s;
+  .textLinkMainProjectPanel {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    color: $color1;
+    transition: all 0.5s;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: $color8;
+    transition: all 0.5s;
+  }
+  &:hover,
+  &.active {
+    background-color: $color20;
+    box-shadow: 0 5px 30px $color9;
+    &:before {
+      width: 10px;
+    }
+    .textLinkMainProjectPanel {
+      color: $color8;
+      padding-left: 10px;
+    }
+  }
+}
+
+.wrapperSubProjectPanel {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+.listSubProjectPanel {
+  padding-left: 10px;
+}
+
+.linkSubProjectPanel {
+  display: block;
+  position: relative;
+  padding: 15px 30px;
+  background-color: $color20;
+  color: $color1 !important;
+  text-decoration: none;
+  border-top: 1px solid $color1;
+  transition: all 0.5s;
+  .textLinkSubProjectPanel {
+    font-size: 16px;
+    line-height: 24px;
+    color: $color2;
+    overflow: hidden;
+    transition: all 0.5s;
+  }
+  svg {
+    width: 0px;
+    height: 0px;
+    color: $color2;
+    transition: all 0.5s;
+  }
+  &:hover,
+  &.active {
+    .textLinkSubProjectPanel {
+      color: $color17;
+      font-weight: 700;
+    }
+    svg {
+      color: $color17;
+      width: 15px;
+      height: 10px;
+    }
+  }
+}
+// end project panel
+
+// project content
+
+.wrapperTitleProjectContent {
+  margin-top: -120px;
+  width: 80%;
+  padding-top: 25%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  z-index: 1;
+  .containerTitleProjectContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 1;
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $color20;
+    }
+    h4 {
+      margin-bottom: 0;
+      font-size: 28px;
+      line-height: 36px;
+      color: $color1;
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color8;
+    opacity: 0.8;
+  }
+}
+
+.containerImageProjectContent {
+  position: relative;
+  width: 100%;
+  padding-top: 60%;
+  .imageProjectContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.wrapperTextProjectContent {
+  .textProjectContent {
+    font-size: 14px;
+    line-height: 20px;
+    color: $color2;
+    margin-bottom: 40px;
+  }
+  .titleTextProjectContent {
+    font-size: 24px;
+    line-height: 32px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50%;
+      height: 0.8px;
+      background-color: $color9;
+    }
+  }
+}
+
+.listTextProjectContent {
+  // margin-bottom: 10px;
+  justify-content: center;
+  margin-top: 20px;
+  .itemTextProjectContent {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    svg {
+      width: 10px;
+      height: 10px;
+      padding: 2px;
+      margin-right: 8px;
+      color: $color18;
+      transform: translateY(-2px);
+    }
+  }
+}
+.wrapperImageProjectText {
+  width: 100%;
+}
+.containerImageProjectText {
+  position: relative;
+  width: 100%;
+  padding-top: 80%;
+  .imageProjectText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+// end project content
+
+// project detail 2
+
+.wrapperProjectDetail-2 {
+  margin-bottom: 60px;
+}
+.wrapperTitleProjectDetail-2 {
+  .titleTextProjectDetail-2 {
+    font-size: 24px;
+    line-height: 32px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    color: $color8;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50%;
+      height: 0.8px;
+      background-color: $color9;
+    }
+  }
+}
+
+.wrapperTextProjectDetail-2 {
+  .textProjectDetail-2 {
+    font-size: 14px;
+    line-height: 20px;
+    color: $color2;
+    margin-bottom: 5px;
+    text-align: justify;
+  }
+}
+
+.contentImageProjectDetail-2 {
+  position: relative;
+  width: 100%;
+  padding-top: 50%;
+  .imageProjectDetail-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+  }
+  div {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+  }
+  .backgroundImageStaticProjectDetail-2 {
+    transform: translateY(15px) scale(1.4);
+    z-index: 1;
+  }
+  .backgroundImageAnimationProjectDetail-2 {
+    z-index: 2;
+    animation: rotation 15s infinite linear;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .contentImageProjectDetail-2 {
+    padding-top: 62%;
+  }
+}
+@media (max-width: 1199.98px) {
+  .contentImageProjectDetail-2 {
+    padding-top: 82%;
+    .imageProjectDetail-2 {
+      width: 68%;
+    }
+  }
+  .wrapperTitleProjectContent {
+    .containerTitleProjectContent {
+      width: 90%;
+      text-align: center;
+    }
+  }
+}
+.wrapperProjectContentDetail {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+// end project detail 2
+/* Mobile & tablet: width <1024px */
+@media only screen and (max-width: 1023px) {
+  .linkSubProjectPanel {
+    padding: 15px 20px;
+  }
+}
+
+/* Mobie: width < 740px */
+@media only screen and (max-width: 739px) {
+  .wrapperProjectDetail {
+    padding-top: 30px;
+  }
+  .wrapperMainProjectPanel {
+    padding-bottom: 15px;
+  }
+  .linkMainProjectPanel {
+    padding: 15px 30px;
+  }
+  .wrapperTextProjectContent {
+    .textProjectContent {
+      margin-bottom: 0;
+    }
+  }
+  .rightSideProjectDetail{
+    padding-bottom: 30px;
+  }
+  .rightSideProjectDetail--ld{
+    padding-bottom: 0;
+  }
+  .backgroundImageAnimationProjectDetail-2 {
+    display: none;
+  }
+  .containerImageProjectDetail-2 {
+    overflow: hidden;
+  }
+  .listTextProjectContent {
+    margin-top: 20px;
+    .itemTextProjectContent {
+      margin-bottom: 15px !important;
+    }
+  }
+  .wrapperTextProjectDetail-2 {
+    .textProjectDetail-2 {
+      margin-bottom: 12px;
+    }
+  }
+  .containerImageProjectContent {
+    .imageProjectContent {
+      padding-bottom: 0;
+    }
+  }
+  .wrapperTitleProjectContent {
+    .containerTitleProjectContent {
+      h4 {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+  }
+  .wrapperImageProjectContent--ld{
+    margin-bottom: 15px !important;
+  }
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .rightSideProjectDetail {
+    padding-right: 6px;
+  }
+  .listSubProjectPanel {
+    padding-left: 0;
+  }
+  .contentImageProjectDetail-2 {
+    div {
+      width: 50%;
+    }
+  }
+  .containerProjectDetailCustom{
+    max-width: 756px;
+  }
+  .containerProjectDetail--ld{
+    max-width: 759px ;
+  }
+}
+
+/* PC Low */
+@media (min-width: 1024px) and (max-width: 1239px) {
+  .contentImageProjectDetail-2 {
+    div {
+      width: 50%;
+    }
+  }
+  .containerProjectDetail--ld{
+    max-width: 1018px ;
+  }
+}

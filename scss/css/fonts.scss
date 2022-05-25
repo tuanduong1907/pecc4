@@ -1,0 +1,19 @@
+// variables
+@import "../abstracts/variables";
+// end variables
+
+@font-face{
+    font-family: $font1;
+    src: url(../fonts/#{$font2}-Light.ttf);
+    font-weight: 300;
+}
+@font-face{
+    font-family: $font1;
+    src: url(../fonts/#{$font2}-Regular.ttf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: $font1;
+    src: url(../fonts/#{$font2}-Bold.ttf);
+    font-weight: 700;
+}

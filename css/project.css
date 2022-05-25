@@ -1,0 +1,261 @@
+.wrapperProject {
+  padding-top: 40px;
+}
+.wrapperProject .itemProject {
+  padding-bottom: 80px;
+}
+
+.contentProject {
+  position: relative;
+  margin: 0;
+}
+.contentProject .wrapperImageProject {
+  padding: 0;
+}
+.contentProject .wrapperDetailProject {
+  padding: 0;
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+}
+.contentProject:hover .containerImageProject .imageProject {
+  transform: scale(1.2) rotate(3deg);
+}
+.contentProject:hover .containerImageProject .wrapperHoverEffectProject .elementEffectProject {
+  opacity: 0.3;
+}
+.contentProject:hover .containerImageProject .wrapperHoverEffectProject .elementEffectProject:nth-child(1) {
+  top: 0;
+  left: 50%;
+}
+.contentProject:hover .containerImageProject .wrapperHoverEffectProject .elementEffectProject:nth-child(2) {
+  top: 50%;
+  left: 50%;
+}
+.contentProject:hover .containerImageProject .wrapperHoverEffectProject .elementEffectProject:nth-child(3) {
+  top: 50%;
+  left: 0;
+}
+.contentProject:hover .containerImageProject .wrapperHoverEffectProject .elementEffectProject:nth-child(4) {
+  top: 0;
+  left: 0;
+}
+.contentProject.reverse {
+  flex-direction: row-reverse;
+}
+.contentProject.reverse .wrapperDetailProject {
+  left: 0;
+}
+.contentProject.reverse .wrapperDetailProject .containerDetailProject .wrapperButtonDetailProject {
+  left: 60px;
+}
+
+.containerImageProject {
+  position: relative;
+  width: 100%;
+  padding-top: 50%;
+  overflow: hidden;
+}
+.containerImageProject .imageProject {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+.containerImageProject:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  visibility: visible;
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.wrapperDetailProject {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.containerDetailProject {
+  width: 100%;
+  height: 100%;
+  padding: 50px 60px 60px;
+  box-shadow: 0 0 20px #7b7b7b85;
+  position: relative;
+}
+.containerDetailProject:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #092271;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.wrapperTitleDetailProject {
+  position: relative;
+}
+.wrapperTitleDetailProject h4 {
+  color: #ffffff;
+  font-size: 32px;
+  line-height: 38px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.wrapperTitleDetailProject:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  padding-top: 1px;
+  background-color: #bfc6cc;
+}
+
+.wrapperTextDetailProject p {
+  color: #bbbdc3;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+  margin-bottom: 0;
+  word-spacing: 1px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  max-height: 132px;
+}
+
+.wrapperButtonDetailProject {
+  position: absolute;
+  bottom: 0;
+  right: 60px;
+  transform: translateY(15px);
+}
+.wrapperButtonDetailProject a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #d32c2c;
+  padding: 18px 30px;
+  transition: all 0.3s;
+}
+.wrapperButtonDetailProject a:hover {
+  transform: scale(0.95);
+  background-color: #ae0003;
+}
+
+.wrapperHoverEffectProject {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.wrapperHoverEffectProject .elementEffectProject {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: #000000;
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.5s;
+}
+.wrapperHoverEffectProject .elementEffectProject:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.wrapperHoverEffectProject .elementEffectProject:nth-child(2) {
+  top: 0;
+  left: 50%;
+}
+.wrapperHoverEffectProject .elementEffectProject:nth-child(3) {
+  top: 50%;
+  left: 50%;
+}
+.wrapperHoverEffectProject .elementEffectProject:nth-child(4) {
+  top: 50%;
+  left: 0;
+}
+
+/* Mobie: width < 740px */
+@media only screen and (max-width: 739px) {
+  .containerProject-custom {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .wrapperProject {
+    padding-top: 30px;
+  }
+  .wrapperProject .itemProject {
+    padding-bottom: 0;
+  }
+
+  .contentProject {
+    position: static;
+  }
+  .contentProject .wrapperDetailProject {
+    bottom: auto;
+  }
+
+  .wrapperTitleDetailProject h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .contentProject .wrapperButtonDetailProject,
+.contentProject .wrapperDetailProject {
+    position: static;
+  }
+}
+/* Mobie: width < 740px */
+@media only screen and (max-width: 739px) {
+  .containerDetailProject {
+    padding: 12px 20px 32px;
+  }
+
+  .wrapperTitleDetailProject h4 {
+    padding-bottom: 0;
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 28px;
+    display: inline-block;
+    border-bottom: 1px solid #fff;
+  }
+  .wrapperTitleDetailProject:before {
+    width: 0;
+  }
+
+  .wrapperButtonDetailProject a {
+    padding: 12px 20px;
+  }
+}
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .containerProject-custom {
+    padding-inline: 0;
+    max-width: 740px;
+  }
+}
+/* PC Low */
+@media (min-width: 1024px) and (max-width: 1239px) {
+  .containerProject-custom {
+    max-width: 1018px;
+  }
+}

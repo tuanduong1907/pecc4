@@ -1,0 +1,234 @@
+.wrapperContactDetail {
+  padding-bottom: 40px;
+  background-color: #eff2f7;
+}
+.wrapperContactDetail .titleItem {
+  color: #092271;
+  text-transform: capitalize;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+
+.contentContactDetail {
+  position: relative;
+  background-color: #ffffff;
+  margin-top: -65px;
+  padding: 40px 20px;
+  align-items: start;
+}
+
+.containerItemContactDetail {
+  display: flex;
+  justify-content: left;
+}
+
+.wrapperIconContactDetail {
+  padding-top: 5px;
+  padding-right: 20px;
+}
+.wrapperIconContactDetail svg {
+  width: 30px;
+  height: 30px;
+  color: #092271;
+}
+
+.wrapperTextContactDetail {
+  display: grid;
+}
+.wrapperTextContactDetail h4 {
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+.wrapperTextContactDetail p {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 575px) {
+  .wrapperItemContactDetail {
+    margin-top: 15px;
+  }
+  .wrapperItemContactDetail:first-child {
+    margin-top: 0;
+  }
+
+  .wrapperContactDetail .titleItem {
+    margin: 0;
+  }
+}
+.btnSeeGoogleMap {
+  text-decoration: none;
+  position: relative;
+  background-color: #092271;
+  border-radius: 10px;
+  padding: 15px;
+  line-height: 15px;
+  font-size: 15px;
+  color: #fff !important;
+  transition: all 0.5s;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.btnSeeGoogleMap svg {
+  width: 15px;
+  height: 15px;
+  color: #fff;
+  transform: translateY(-1px);
+  margin-right: 2px;
+  transition: all 0.5s;
+}
+
+.modal iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.textContactDetail a {
+  text-decoration: none;
+  color: #303442;
+}
+
+.wrapperTextContactDetail {
+  text-align: center;
+}
+
+.wrapperItemContactDetail {
+  display: flex;
+}
+.wrapperItemContactDetail .containerItemContactDetail {
+  margin: auto;
+}
+
+@media (max-width: 575px) {
+  .wrapperItemContactDetail {
+    display: block;
+  }
+  .wrapperItemContactDetail .containerItemContactDetail {
+    margin: unset;
+  }
+
+  .wrapperTextContactDetail {
+    text-align: justify;
+  }
+}
+.wrapperIconContactDetail svg {
+  transform: translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+.wrapperIconContactDetail:hover svg {
+  transform: scale(1.3) translateZ(0);
+  color: #d32c2c;
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .wrapperContactDetail .titleItem {
+    font-size: 32px;
+  }
+
+  .containerContactDetail {
+    max-width: 735px !important;
+  }
+}
+/* Mobie: width < 740px */
+@media only screen and (max-width: 739px) {
+  .contentContactDetail {
+    padding: 30px 12px;
+  }
+
+  .wrapperContactDetail {
+    padding-bottom: 20px;
+  }
+
+  .wrapperIconContactDetail svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .wrapperTextContactDetail h4 {
+    margin-bottom: 0;
+  }
+
+  .wrapperContactDetail .titleItem {
+    font-size: 24px;
+  }
+}
+/* PC Low */
+@media (min-width: 1024px) and (max-width: 1239px) {
+  .containerContactDetail {
+    max-width: 995px;
+  }
+}
+.wrapperContactForm {
+  background-color: #eff2f7;
+  padding-bottom: 40px;
+}
+
+.formContactWithUs {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.formContactWithUs input,
+.formContactWithUs textarea {
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  background-color: #ffffff;
+  border: none;
+  padding: 15px;
+  box-shadow: 0 0 5px #bbbdc3;
+}
+.formContactWithUs input:focus,
+.formContactWithUs textarea:focus {
+  outline: none;
+}
+
+.containerInputConact {
+  display: flex;
+  gap: 8px;
+}
+.containerInputConact .wrapperEmailContact {
+  flex: 1;
+}
+.containerInputConact .wrapperPhoneContact {
+  flex: 1;
+}
+
+.wrapperButtonContactWithUs {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapperButtonContactWithUs button {
+  padding: 15px 30px;
+}
+
+/* Mobie: width < 740px */
+@media only screen and (max-width: 739px) {
+  .wrapperContactForm {
+    padding-bottom: 20px;
+  }
+
+  .formContactWithUs {
+    width: 100%;
+  }
+}
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .formContactWithUs {
+    width: 80%;
+  }
+}

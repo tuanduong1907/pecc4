@@ -1,0 +1,251 @@
+.containerMainSlider {
+  position: relative;
+}
+
+.elementMainSlider {
+  position: relative;
+  width: 100%;
+  padding-top: 100vh;
+  overflow: hidden;
+  &.slick-current {
+    .wrapperImageMainSlider {
+      animation: zoomInSlider 8000ms linear 0s infinite alternate;
+    }
+  }
+  &.slick-active {
+    .wrapperContentBannerMainSlider {
+      .contentBannerMainSlider {
+        animation: slideInBottom 1.5s linear;
+        transform: none;
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.wrapperImageMainSlider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 6s;
+  .containerImageMainSlider {
+    height: 100%;
+  }
+
+  .wrapImgResize {
+    background-color: $color2;
+
+    img {
+      @include opacity(0.6);
+    }
+  }
+}
+
+.wrapperContentBannerMainSlider {
+  background-color: #00000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  .contentBannerMainSlider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform: translateY(20%);
+    visibility: hidden;
+    opacity: 0;
+    h4 {
+      text-align: center;
+      font-family: $font1;
+      font-weight: 700;
+      font-size: 22px;
+      color: $color1;
+      margin-bottom: 20px;
+    }
+    p {
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+      width: auto;
+      text-align: right;
+      font-family: $font1;
+      font-weight: 700;
+      font-size: 20px;
+      color: $color1;
+      text-transform: uppercase;
+      line-height: 28px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@keyframes slideInBottom {
+  0% {
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes zoomInSlider {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.slideArrowPrimary {
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  color: $color1;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.prevArrow {
+  left: 30px;
+}
+
+.nextArrow {
+  right: 30px;
+}
+
+.wrapperButtonScroll {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  &:hover {
+    .buttonScroll {
+      color: $color4;
+      &:after {
+        background-color: $color4;
+      }
+    }
+  }
+}
+@media (min-width: 1400px) {
+  .wrapImgResize {
+    .imageBannerMainSlider.objectPosition {
+      object-position: 0 -180px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .elementMainSlider {
+    padding-top: 100vw;
+  }
+
+  .wrapperContentBannerMainSlider {
+    .contentBannerMainSlider {
+      p {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
+}
+
+.showMainSlider {
+  position: relative;
+  .slick-dots {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: inline-flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  .slick-active {
+    .wrapNumberMainSlider {
+      background-color: $color17;
+    }
+  }
+}
+
+.wrapNumberMainSlider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $color1;
+  text-decoration: none;
+  padding: 5px;
+  background-color: transparent;
+  border-radius: 50%;
+  margin: 5px;
+  transition: all 0.5s;
+  .numberMainSlider {
+    transform: translateY(1px);
+    font-size: 14px;
+    line-height: 20px;
+    color: $color1;
+  }
+  &:hover {
+    background-color: $color17;
+  }
+}
+
+.wrapImgResize {
+  overflow: hidden;
+  position: relative;
+
+  img {
+    @include objectFit(cover);
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include translate(-50%, -50%);
+    min-height: 100%;
+    max-height: 100%;
+  }
+
+  &.img16And9 {
+    padding-top: 56.25%;
+  }
+
+  &.imgSquare {
+    padding-top: 100%;
+  }
+
+  &.img9And16 {
+    padding-top: 177%;
+  }
+}
+
+/* Mobie: width < 740px */
+@media only screen and (max-width: 739px) {
+  .wrapNumberMainSlider {
+    margin-inline: 0;
+  }
+}

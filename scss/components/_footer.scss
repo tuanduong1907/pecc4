@@ -1,0 +1,152 @@
+.wrapperFooter {
+  background-color: $color8;
+  padding-top: 40px;
+}
+// top footer
+.wrapperTopFooter {
+  padding-bottom: 30px;
+}
+
+.wrapperLogoFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentTopFooter {
+  display: inline-flex;
+  align-items: center;
+  p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $color5;
+  }
+}
+
+@media (max-width: 992px) {
+  .contentTopFooter {
+    padding-top: 15px;
+  }
+}
+// end top footer
+
+// content footer
+.wrapperAddressFooter {
+  margin-bottom: 40px;
+  h4 {
+    font-size: 18px;
+    line-height: 28px;
+    color: $color5;
+    min-height: 40px;
+    // margin-bottom: 40px;
+  }
+  p {
+    display: flex;
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color5;
+    text-align: justify;
+    svg {
+      margin-right: 5px;
+      width: 16px;
+      height: 16px;
+      color: $color17;
+    }
+    span {
+      font-size: 14px;
+      line-height: 20px;
+      line-height: 20px;
+      color: $color5;
+      text-align: justify;
+      min-height: 60px;
+    }
+  }
+}
+// end content footer
+
+// bottom footer
+.wrapperBottomFooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapperNumberVisitors {
+  padding: 15px;
+  background-color: $color14;
+  display: flex;
+  align-items: center;
+  span {
+    font-size: 14px;
+    line-height: 20px;
+    color: $color5;
+  }
+  .numberVisitors {
+    padding-left: 5px;
+  }
+  .iconVisitors {
+    padding-left: 5px;
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+// end bottom footer
+
+// copyright
+.wrapperCopyright {
+  background-color: $color14;
+  padding: 15px 0;
+}
+
+.contentCopyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $color5;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .contentCopyright {
+    flex-direction: column;
+    text-align: center;
+    span {
+      display: block;
+      margin-top: 8px;
+    }
+    p:first-child {
+      margin-bottom: 12px;
+    }
+  }
+}
+// end copyright
+
+// Responsive
+
+/* Mobile & tablet: width <1024px */
+@media only screen and (max-width: 1023px) {
+  .wrapperAddressFooter {
+    p span,
+    h4 {
+      min-height: auto;
+    }
+  }
+}
+
+/* Mobie: width < 740px */
+@media only screen and (max-width: 739px) {
+  .wrapperFooter {
+    padding-top: 30px;
+  }
+  .wrapperAddressFooter {
+    margin-bottom: 15px;
+  }
+}

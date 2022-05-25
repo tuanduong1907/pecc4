@@ -1,0 +1,52 @@
+.wrapperTopHeader {
+    background-color: $color20;
+}
+
+.listLinkTopHeader{
+    padding: 5px 0;
+    justify-content: end;
+}
+
+.itemLinkTopHeader{
+    border-right: 1px solid $color24;
+    &:last-child{
+        border: none;
+        .linkTopHeader{
+            padding-right: 0;
+        }
+    }
+    .linkTopHeader{
+        display: block;
+        color: $color2;
+        font-size: 12px;
+        line-height: 12px;
+        font-weight: 300px;
+        text-transform: uppercase;
+        padding: 0 15px;
+        text-decoration: none;
+        transition: all .5s;
+        svg{
+            width: 12px;
+            height: 12px;
+            transform: translateY(-1px);
+        }
+        &:hover{
+            color: $color18;
+        }
+    }
+}
+
+.wrapperHeader{
+    height: 22px;
+}
+
+@media (max-width: 1199.98px){
+    .wrapperHeader{
+        height: 110px;
+    }
+}
+@media (max-width: 575.98px){
+    .wrapperHeader{
+        height: 100px;
+    }
+}

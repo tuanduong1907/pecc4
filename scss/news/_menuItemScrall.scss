@@ -1,0 +1,96 @@
+.nav-item {
+  display: inline-block;
+}
+
+/* Responsive */
+/* Mobie: width < 740px */
+@media only screen and (max-width: 739px) {
+  .listItem-mobile {
+    display: block !important;
+  }
+  .listItem-pc {
+    display: none !important;
+  }
+}
+
+.wrapMenuCategoryPage .wrapMenuIntroduce {
+  height: auto;
+}
+.wrapMenuCategoryPage .wrapMenuIntroduce .slick-active .btnScroll {
+  background: #092271;
+  color: #fff;
+}
+.wrapMenuCategoryPage .wrapMenuIntroduce .btnScroll {
+  font-size: 12px;
+  display: block;
+  border: none;
+  border-left: 1px solid #eaecef;
+  padding: 7px 10px;
+  background-color: #fff;
+  text-decoration: none;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 700;
+  float: left;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  line-height: 20px;
+}
+.wrapMenuCategoryPage .wrapMenuIntroduce .nav-tabs {
+  border: none;
+}
+.wrapMenuCategoryPage .wrapMenuIntroduce .nav-tabs .nav-link {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  margin: 0;
+}
+.wrapMenuCategoryPage .wrapMenuIntroduce .slick-slide {
+  height: auto;
+}
+.wrapMenuCategoryPage .wrapMenuIntroduce .slick-prev,
+.wrapMenuCategoryPage .wrapMenuIntroduce .slick-next {
+  background: white;
+  transform: translateY(-17px);
+  height: 100%;
+  width: 35px;
+}
+.wrapMenuCategoryPage .wrapMenuIntroduce .slick-prev {
+  background-color: #ffffff;
+  left: -35px;
+}
+.wrapMenuCategoryPage .wrapMenuIntroduce .slick-next {
+  right: -35px;
+  background-color: #ffffff;
+}
+.wrapMenuCategoryPage .wrapMenuIntroduce .slick-prev:before,
+.wrapMenuCategoryPage .wrapMenuIntroduce .slick-next:before {
+  color: #092271;
+  font-weight: bold;
+}
+
+.wrapMenuCategoryPage .containerItem {
+  overflow: unset;
+  // overflow-x: hidden;
+}
+@media (max-width: 1024px) {
+  .wrapMenuCategoryPage .listItem.slick-slider {
+    padding: 0 30px;
+  }
+  .wrapMenuCategoryPage .listItem .slick-prev {
+    left: -7px;
+  }
+  .wrapMenuCategoryPage .listItem .slick-next {
+    right: -7px;
+  }
+}
+@media (max-width: 575px) {
+  .wrapMenuCategoryPage .wrapMenuIntroduce .btnScroll {
+    font-size: 8px;
+  }
+}
